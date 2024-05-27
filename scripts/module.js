@@ -43,7 +43,7 @@ Hooks.on('init', async () => {
     )
 
     patchApplicationRender()
-    patchPrepareEncumbrance()
+    // patchPrepareEncumbrance()
     registerMigration()
     registerHouseRules()
     registerAbilities()
