@@ -1,6 +1,6 @@
 import { MODULE, CONSTANTS } from '../constants.js'
 import { getSetting } from '../utils.js'
-import { default as AttributesFields } from "systems/dnd5e/module/data/actor/templates/attributes.mjs";
+import { default as AttributesFields } from "/systems/dnd5e/module/data/actor/templates/attributes.mjs";
 
 export function patchPrepareEncumbrance () {
     if (game.modules.get('variant-encumbrance-dnd5e')?.active) return
