@@ -7,7 +7,7 @@ export function patchPrepareEncumbrance () {
     AttributesFields.prepareEncumbrance = prepareEncumbrancePatch;
 }
 
-async function prepareEncumbrancePatch(rollData) {
+function prepareEncumbrancePatch(rollData) {
     const equippedMod = getSetting(CONSTANTS.ENCUMBRANCE.EQUIPPED_ITEM_WEIGHT_MODIFIER.SETTING.KEY) || 0
     const proficientEquippedMod = getSetting(CONSTANTS.ENCUMBRANCE.PROFICIENT_EQUIPPED_ITEM_WEIGHT_MODIFIER.SETTING.KEY) || 0
     const unequippedMod = getSetting(CONSTANTS.ENCUMBRANCE.UNEQUIPPED_ITEM_WEIGHT_MODIFIER.SETTING.KEY) || 0
